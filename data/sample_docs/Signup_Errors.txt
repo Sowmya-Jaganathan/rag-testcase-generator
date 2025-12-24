@@ -1,0 +1,5 @@
+Signup Error Codes
+
+ERR_EMAIL_EXISTS: Email already registered
+ERR_WEAK_PASSWORD: Password does not meet minimum criteria
+ERR_INVALID_EMAIL: Invalid email format

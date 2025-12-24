@@ -1,0 +1,15 @@
+User Signup Feature
+
+Users should be able to create an account using email and password.
+
+Fields required:
+- Email address
+- Password
+
+Validations:
+- Email must be unique
+- Password must be at least 8 characters
+
+After successful signup:
+- User should receive a verification email
+- User should not be logged in until verification is complete
