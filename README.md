@@ -1,12 +1,15 @@
 
-# File-Based Multimodal RAG for Test Case / Use Case Generation
 
-# Overview
+#  File-Based Multimodal RAG for Test Case / Use Case Generation
+
+##  Overview
 
 This project implements a **file-based Retrieval-Augmented Generation (RAG) system** that generates **use cases / test cases** from requirement documents such as text files, PDFs, and images.
 
 Instead of relying on the LLM’s internal knowledge, the system **retrieves relevant context from provided files first** and then generates structured, grounded test cases.
 This approach significantly **reduces hallucination** and ensures outputs are evidence-based.
+
+---
 
 ##  Problem Statement
 
@@ -17,7 +20,7 @@ This project automates that process by:
 * Retrieving only relevant content for a user query
 * Generating structured test cases grounded in the retrieved context
 
-
+---
 
 ##  What is RAG?
 
@@ -49,7 +52,7 @@ Structured Test Cases (JSON)
 
 ##  Project Structure
 
-
+```
 rag-testcase-generator/
 ├── data/
 │   └── sample_docs/
@@ -77,7 +80,9 @@ rag-testcase-generator/
 ├── requirements.txt
 ├── README.md
 └── .env.example
+```
 
+---
 
 ##  Tech Stack
 
@@ -90,6 +95,7 @@ rag-testcase-generator/
 * **OCR (optional):** Tesseract
 * **Environment Management:** python-dotenv
 
+---
 
 ##  Supported Input Types
 
@@ -100,47 +106,52 @@ rag-testcase-generator/
 
 ---
 
-## Setup Instructions
+##  Setup Instructions
 
-###  Clone the Repository
+### 1 Clone the Repository
 
+```bash
 git clone <your-repo-url>
 cd rag-testcase-generator
+```
 
+### 2️ Create Virtual Environment
 
-###  Create Virtual Environment
-
-
+```bash
 python -m venv venv
-
+```
 
 Activate:
 
+```bash
 venv\Scripts\activate   # Windows
+```
 
+### 3️ Install Dependencies
 
-### Install Dependencies
-
-
+```bash
 pip install -r requirements.txt
+```
 
-
-###  (Optional) Configure OpenAI
+### 4️ (Optional) Configure OpenAI
 
 Create a `.env` file:
 
-
+```txt
 OPENAI_API_KEY=your_api_key_here
+```
 
 > The project works even **without OpenAI** using a fallback generator.
 
+---
 
 ##  How to Run
 
 ### CLI Mode
 
-
+```bash
 python app.py
+```
 
 Enter query:
 
@@ -148,11 +159,13 @@ Enter query:
 Create use cases for user signup
 ```
 
+---
+
 ### UI Mode (Recommended)
 
-
+```bash
 streamlit run ui.py
-
+```
 
 Features:
 
@@ -160,13 +173,15 @@ Features:
 * JSON test case output
 * Debug view showing retrieved chunks
 
+---
 
-## Sample Query
+##  Sample Query
 
-
+```
 Create use cases for user signup
+```
 
-
+---
 
 ##  Sample Output (JSON)
 
@@ -198,9 +213,11 @@ Create use cases for user signup
     "Max email length"
   ]
 }
+```
 
+---
 
-## Safeguards & Guardrails
+##  Safeguards & Guardrails
 
 * **Retrieval-first design** (no direct LLM answering)
 * **Context-only generation**
@@ -229,6 +246,7 @@ The project demonstrates:
 * Practical safeguards
 * Developer-friendly setup
 
+---
 
 ##  Future Enhancements
 
@@ -238,7 +256,7 @@ The project demonstrates:
 * Automated evaluation metrics
 * Full multimodal vision models
 
-
+---
 
 ##  Notes
 
@@ -246,11 +264,14 @@ The project demonstrates:
 * Generation layer is modular and can be swapped with any LLM.
 * UI is intentionally minimal as per assignment guidance.
 
-
+---
 
 ##  Author
 
 **Sowmya Jaganathan**
 AI & Data Science Student
-Machine Learning | RAG | QA Automation
+Machine Learning | RAG | QA 
+
+---
+
 
