@@ -200,7 +200,7 @@ Create use cases for user signup
 }
 
 
-## 🛡️ Safeguards & Guardrails
+## Safeguards & Guardrails
 
 * **Retrieval-first design** (no direct LLM answering)
 * **Context-only generation**
