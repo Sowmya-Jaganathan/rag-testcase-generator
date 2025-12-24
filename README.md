@@ -269,7 +269,7 @@ The project demonstrates:
 ##  Author
 
 **Sowmya Jaganathan**
-AI & Data Science Student
+AI & Data Science Student |
 Machine Learning | RAG | QA 
 
 ---
