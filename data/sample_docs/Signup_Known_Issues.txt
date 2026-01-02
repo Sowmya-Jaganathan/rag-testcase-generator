@@ -1,0 +1,5 @@
+Known Signup Issues
+
+- Verification email delivery may sometimes be delayed
+- Duplicate email signup should be blocked immediately
+- Error messages should be displayed inline and be user-friendly

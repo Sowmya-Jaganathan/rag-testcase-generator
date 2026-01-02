@@ -1,0 +1,10 @@
+User Login Feature
+
+Users should be able to log in using registered email and password.
+
+Validations:
+- Email must exist
+- Password must match
+
+After successful login:
+- User should be redirected to dashboard

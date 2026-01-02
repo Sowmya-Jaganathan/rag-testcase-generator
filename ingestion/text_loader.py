@@ -13,3 +13,12 @@ def load_text_files(folder_path):
             })
 
     return documents
+
+
+def load_text_file(file_path):
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            return file.read()
+    except Exception as e:
+        print(f"Failed to read {file_path}: {e}")
+        return ""

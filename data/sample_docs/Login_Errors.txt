@@ -1,0 +1,4 @@
+Login Error Codes
+
+ERR_INVALID_CREDENTIALS: Invalid email or password
+ERR_ACCOUNT_LOCKED: Account is temporarily locked

@@ -8,3 +8,10 @@ Pillow
 python-dotenv
 sentence-transformers
 streamlit
+
+
+#venv\Scripts\activate
+#python app.py
+#print(f"Loaded {file}: {content[:80]}")
+#streamlit run ui.py
+

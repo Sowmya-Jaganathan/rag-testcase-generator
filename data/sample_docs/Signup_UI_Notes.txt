@@ -1,0 +1,10 @@
+Signup UI Description
+
+The signup UI screenshot shows the following fields:
+- First Name input field
+- Last Name input field
+- Email input field
+- Password input field
+- Signup button
+
+This UI information should be used while creating test cases based on the signup UI.
