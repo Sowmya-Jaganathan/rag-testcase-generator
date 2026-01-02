@@ -258,6 +258,15 @@ The project demonstrates:
 
 ---
 
+##  Recent Enhancements
+
+- Added support for **Login use case and test case generation**
+- Supports **multiple feature documents** (Signup & Login)
+- Implemented **OCR-based ingestion** for UI screenshots (PNG/JPG)
+- Query-aware generation of **multiple structured use cases**
+- Streamlit UI shows **retrieved context** for transparency and debugging
+
+
 ##  Notes
 
 * Local embeddings are used to avoid network and quota limitations.
